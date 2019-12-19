@@ -13,20 +13,40 @@
 
 .default {
   background-color: $color-secondary;
+  @include fade(background-color);
+  &:hover {
+    background-color: lightHover($color-secondary);
+  }
 }
 
 .error {
   background-color: $color-error;
+  @include fade(background-color);
+  &:hover {
+    background-color: lightHover($color-error);
+  }
 }
 
 .info {
   background-color: $color-accent;
+  @include fade(background-color);
+  &:hover {
+    background-color: lightHover($color-accent);
+  }
 }
 
 .success {
   background-color: $color-success;
+  @include fade(background-color);
+  &:hover {
+    background-color: lightHover($color-success);
+  }
 }
 
 .warning {
   background-color: $color-warning;
+  @include fade(background-color);
+  &:hover {
+    background-color: lightHover($color-warning);
+  }
 }

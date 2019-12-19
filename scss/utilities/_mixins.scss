@@ -1,3 +1,4 @@
+// Media Queries
 @mixin mq($break) {
 
   @if $break == 'xs' {
@@ -20,4 +21,9 @@
       @content;
     }
   }
+}
+
+// Fade Transition
+@mixin fade($property) {
+  transition: $property, ease-in-out, 1s;
 }

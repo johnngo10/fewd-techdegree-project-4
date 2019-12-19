@@ -8,6 +8,11 @@ $color-error: #e4757a;
 $color-success: #63cc82;
 $color-warning: #fd7856;
 
+// Color functions
+@function lightHover($color) {
+  @return lighten($color, 15%);
+}
+
 // Breakpoints
 $break-xs: 575px;
 $break-s: 576px;

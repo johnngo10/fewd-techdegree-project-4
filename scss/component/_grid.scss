@@ -32,13 +32,6 @@
   }
 }
 
-.centered {
-  @include mq('med') {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 .theme {
   &.col-1 {
@@ -124,6 +117,12 @@
     
     .col-12 {
       flex-basis: 100%;
+    }
+
+    .centered {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
